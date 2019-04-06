@@ -1,3 +1,16 @@
 a{
   text-decoration: none;
 }
+
+#root{
+  height: 100%;
+  padding-top:64px;
+  display: flex;
+  justify-content:center;
+}
+
+/* 重写Antd css */
+/* tab栏 */
+.ant-tabs .ant-tabs-left-bar .ant-tabs-tab{
+  text-align: left;
+}

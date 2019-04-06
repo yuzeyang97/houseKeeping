@@ -2,6 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as logCreator from '../actions';
+import MessageTabView from '../component/MessageTabView';
 
 
 class Home extends React.Component {
@@ -17,7 +18,7 @@ class Home extends React.Component {
 
   render() {
     console.log(this.props);
-    return <h2 onClick={this.pushAction}>{this.props.name}</h2>;
+    return <MessageTabView />;
   }
 }
 
