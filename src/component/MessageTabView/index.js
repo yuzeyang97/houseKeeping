@@ -69,6 +69,7 @@ export default function MessageTabView() {
               <img src={item.icon} className={styles.icon} />
               <span className={styles.iconText}>{item.tabName}</span>
             </span>}
+            style={{ width: '740px' }}
           >
             {item.tabContent}
           </TabPane>

@@ -9,7 +9,7 @@ const { Header, Content, Footer } = Layout;
 export default function NavBar() {
   console.log(styles);
   return (
-    <Header style={{ position: 'fixed', width: '100%', top: 0 }}>
+    <Header style={{ position: 'fixed', width: '100%', top: 0, zIndex: 9999 }}>
       <div className={styles.logo}>
         同城本地服务
       </div>

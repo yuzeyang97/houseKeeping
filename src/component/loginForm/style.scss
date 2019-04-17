@@ -1,0 +1,21 @@
+.loginFormWrap{
+    display: flex;
+    height: 300px;
+    width: 450px;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #6585a2e3;
+    border-radius: 30px;
+}
+.input{
+    margin: 20px 0px;
+    width: 280px;
+    height: 35px;
+}
+.formBtn{
+    margin-top: 10px;
+    background: #2e689e;
+    border-color: #2e689e;
+}
