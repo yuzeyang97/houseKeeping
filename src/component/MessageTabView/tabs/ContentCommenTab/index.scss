@@ -1,0 +1,42 @@
+.tabHeader{
+    display: block;
+    width: 93%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+}
+
+.tabText{
+    color: #000!important;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.tabIcon{
+    width: 35px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: -8px;
+    padding-right: 5px;
+}
+
+.link{
+    display: inline-block;
+    color: #000;
+    margin: 4px 8px 4px 0;
+    white-space: nowrap;
+    height: 15px;
+    line-height: 15px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.tabsContent{
+    padding:10px 0px;
+}

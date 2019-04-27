@@ -23,37 +23,49 @@ const tabArrs = [
   {
     tabName: '搬家',
     tabContent: <MoveHouse />,
-    icon: MoveHouse_ICON
+    icon: MoveHouse_ICON,
+    tabSon: ['空调移机', '设备迁移']
   },
   {
     tabName: '放心阿姨',
     tabContent: <Housekeeper />,
-    icon: Housekeeper_ICON
+    icon: Housekeeper_ICON,
+    tabSon: ['保姆', '月嫂', '钟点工']
+
   },
   {
     tabName: '家电维修',
     tabContent: <ApplianceRepair />,
-    icon: ApplianceRepair_ICON
+    icon: ApplianceRepair_ICON,
+    tabSon: ['家具', '家电']
+
   },
   {
     tabName: '电子维修',
     tabContent: <ElectronicRepair />,
-    icon: ElectronicRepair_ICON
+    icon: ElectronicRepair_ICON,
+    tabSon: ['电脑', '手机', '数码']
+
   },
   {
     tabName: '清修/疏通',
     tabContent: <Dredge />,
-    icon: Dredge_ICON
+    icon: Dredge_ICON,
+    tabSon: ['保洁', '疏通管道']
+
   },
   {
     tabName: '日常生活',
     tabContent: <DailyLife />,
-    icon: DailyLife_ICON
+    icon: DailyLife_ICON,
+    tabSon: ['配送', '鲜花', '回收']
+
   },
   {
     tabName: '其他',
     tabContent: <Other />,
-    icon: Other_ICON
+    icon: Other_ICON,
+    tabSon: ['养老院', '白事']
   }
 ];
 
@@ -65,9 +77,10 @@ export default function MessageTabView() {
         tabArrs.map((item, index) => (
           <TabPane
             key={index + 1}
-            tab={<span>
+            tab={<span className={styles.sliderTapWrapper} >
               <img src={item.icon} className={styles.icon} />
               <span className={styles.iconText}>{item.tabName}</span>
+              {item.tabSon.map((sonItem, index) => <a key={index} className={styles.tabSon}>{sonItem}</a>)}
             </span>}
             style={{ width: '740px' }}
           >

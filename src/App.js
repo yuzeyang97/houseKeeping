@@ -7,7 +7,7 @@ import 'antd/dist/antd.css';
 import './App.css';
 import rootReducer from './reducers';
 import Home from './containers/Home';
-import Topics from './containers/Topics';
+import Detail from './containers/Detail';
 import About from './containers/About';
 import NavBar from './component/NavBar';
 
@@ -36,7 +36,7 @@ function App() {
         <NavBar />
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/topics" component={Topics} />
+        <Route exact path={['/detail/:firstid', '/detail/:firstid/:secondid']} component={Detail} />
       </Router>
     </Provider>
   );

@@ -1,24 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'antd';
+import { banjia as banjiaTabList } from '../../../../config/tabConfig';
 import styles from './style.scss';
 
 const icon = require('../../../../resource/img/tabs/zhaobanjia.png');
 const backicon = require('../../../../resource/img/tabs/banjiaad_yunying.png');
 
-const contentArr = [
-  { name: '公司搬家' },
-  { name: '居民搬家' },
-  { name: '长途搬家' },
-  { name: '搬家搬场' },
-  { name: '小型搬家' },
-  { name: '钢琴搬运' },
-  { name: '设备搬迁' },
-  { name: '空调移机' },
-  { name: '起重吊装' },
-  { name: '家具拆装' },
-  { name: '国际搬家' },
-];
+
+const contentArr = banjiaTabList;
 
 export default function () {
   return (
@@ -28,7 +18,7 @@ export default function () {
         <span className={styles.iconText}>搬家</span>
       </div>
       <div className={styles.detailProject}>
-        {contentArr.map((item, index) => <Link key={index}>{item.name}</Link>)}
+        {contentArr.map((item, index) => <Link key={index} title={item.url} to={`detail/banjia/${item.secondParams}`}>{item.name}</Link>)}
       </div>
 
       <div className={styles.contentCenter}>
