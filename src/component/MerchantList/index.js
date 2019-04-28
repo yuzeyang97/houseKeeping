@@ -1,14 +1,15 @@
 import React from 'react';
-import { List, Avatar, Icon } from 'antd';
+import { List, Icon, Button } from 'antd';
+import styles from './index.scss';
 
 const listData = [];
 for (let i = 0; i < 23; i++) {
   listData.push({
-    href: 'http://ant.design',
-    title: `ant design part ${i}`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description: 'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content: 'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
+    href: 'https://t1.58cdn.com.cn/bidding/small/n_v2c0f73fc40f934970998ef8a8be12fa28.jpg?w=160&h=120&ss=1',
+    title: `机械设备起重、搬运、吊装、就位、人工起${i}`,
+    avatar: 'https://t1.58cdn.com.cn/bidding/small/n_v2c0f73fc40f934970998ef8a8be12fa28.jpg?w=160&h=120&ss=1',
+    description: '北京崇宣阁设备安装有限公司',
+    content: '主营精密设备搬运、大型厂房搬迁、吊装起重、设备安装维修维抑等业务，自成立以来，崇宣阁以自身多年技术经验和知识积累为背景，聚焦于精密设备维修维护、重型设备起重安装服务，配置了齐全的精密设备搬运工具，拥有100多名5年以上精密设备搬运作业人员，全国连锁运营，是国内服务网点比较健全的、专业的大型起重公司机械设备大修与项修主营精密设备搬运、大型厂房搬迁、吊装起重、设备安装维修维抑等业务，自成立以来，崇宣阁以自身多年技术经验和知识积累为背景，聚焦于精密设备维修维护、重型设备起重安装服务，配置了齐全的精密设备搬运工具，拥有100多名5年以上精密设备搬运作业人员，全国连锁运营，是国内服务网点比较健全的、专业的大型起重公司机械设备大修与项修主营精密设备搬运、大型厂房搬迁、吊装起重、设备安装维修维抑等业务，自成立以来，崇宣阁以自身多年技术经验和知识积累为背景，聚焦于精密设备维修维护、重型设备起重安装服务，配置了齐全的精密设备搬运工具，拥有100多名5年以上精密设备搬运作业人员，全国连锁运营，是国内服务网点比较健全的、专业的大型起重公司机械设备大修与项修主营精密设备搬运、大型厂房搬迁、吊装起重、设备安装维修维抑等业务，自成立以来，崇宣阁以自身多年技术经验和知识积累为背景，聚焦于精密设备维修维护、重型设备起重安装服务，配置了齐全的精密设备搬运工具，拥有100多名5年以上精密设备搬运作业人员，全国连锁运营，是国内服务网点比较健全的、专业的大型起重公司机械设备大修与项修',
   });
 }
 
@@ -35,20 +36,29 @@ export default class MerchantList extends React.Component {
           },
           pageSize: 5,
         }}
+        style={{ paddingBottom: '40px', width: '1000px' }}
         dataSource={listData}
-        footer={<div><b>ant design</b> footer part</div>}
+        footer={<div><b>数据源</b>:58同城</div>}
         renderItem={item => (
           <List.Item
             key={item.title}
-            actions={[<IconText type="star-o" text="156" />, <IconText type="like-o" text="156" />, <IconText type="message" text="2" />]}
-            extra={<img width={272} alt="logo" src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png" />}
+            extra={<img width={160} height={120} style={{ marginRight: '20px', marginLeft: '-40px' }} alt="logo" src="https://t1.58cdn.com.cn/bidding/small/n_v2c0f73fc40f934970998ef8a8be12fa28.jpg?w=160&h=120&ss=1" />}
+            className={styles.listItem}
           >
-            <List.Item.Meta
-              avatar={<Avatar src={item.avatar} />}
-              title={<a href={item.href}>{item.title}</a>}
-              description={item.description}
-            />
-            {item.content}
+            <div>
+              <List.Item.Meta
+                style={{ marginBottom: 0, width: '670px' }}
+                title={<a href={item.href}>{item.title}</a>}
+                description={item.description}
+              />
+              <div className={styles.content} style={{ webkitBoxOrient: 'vertical', width: '670px' }}>
+                {item.content}
+              </div>
+            </div>
+            <div style={{ marginLeft: '20px' }}>
+              <Button type="primary">联系商家</Button>
+            </div>
+
           </List.Item>
         )}
       />

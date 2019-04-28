@@ -14,3 +14,15 @@ a{
 .ant-tabs .ant-tabs-left-bar .ant-tabs-tab{
   text-align: left;
 }
+
+.ant-list-vertical .ant-list-item-meta-title{
+  margin-bottom: 0;
+}
+
+.ant-list-item-meta-description{
+  margin: 5px 0px;
+}
+
+.ant-list-vertical .ant-list-item-main{
+  display: flex;
+}
