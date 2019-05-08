@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './index.scss';
 
 export default function (props) {
@@ -7,7 +8,7 @@ export default function (props) {
     <dl >
       <dt className={styles.tabHeader}><img src={tab.icon} className={styles.tabIcon} /><span className={styles.tabText}>{tab.tabsName}</span></dt>
       <dd className={styles.tabsContent}>
-        {tab.sonTab.map((item, index) => <a href={item.url} key={index} className={styles.link}>{item.name}</a>)}
+        {tab.sonTab.map((item, index) => <Link to={`/detail/${tab.firstParams}/${item.secondParams}`} key={index} className={styles.link}>{item.name}</Link>)}
       </dd>
     </dl>
   );

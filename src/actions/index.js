@@ -1,6 +1,14 @@
-export function login() {
+export function login(token) {
   return {
-    type: 'LOGIN'
+    type: 'LOGIN',
+    token
+  };
+}
+
+export function getInfo(data) {
+  return {
+    type: 'GET_INFO',
+    data
   };
 }
 

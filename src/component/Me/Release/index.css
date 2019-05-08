@@ -1,0 +1,8 @@
+.releaseWrapper .ant-list-vertical .ant-list-item-main{
+    display: block
+}
+
+.releaseWrapper .ant-list-item-action{
+    display: flex;
+    justify-content: flex-end;
+}

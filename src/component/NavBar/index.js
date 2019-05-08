@@ -15,6 +15,7 @@ class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
+    console.log(props);
   }
   state={
     showLoginForm: false
@@ -24,7 +25,17 @@ class NavBar extends React.Component {
       showLoginForm: !this.state.showLoginForm
     });
   }
+  handlePublishBtn=() => {
+    const isLogin = this.props.user.isLogin || sessionStorage.getItem('token');
+    if (!isLogin) {
+      this.handleLoginBtn();
+      return;
+    }
+    this.props.history.push('/publish');
+  }
   render() {
+    const isLogin = this.props.user.isLogin || sessionStorage.getItem('token');
+    console.log(isLogin);
     return (
       <Header className={styles.header}>
         <div>
@@ -34,11 +45,16 @@ class NavBar extends React.Component {
           <Link to="/" className={`${styles.tab} ${styles.homeLink}`}><img src={homeIcon} className={styles.homeIcon} />首页</Link>
         </div>
         <div className={styles.rightTab}>
-          <span to="/topics" className={styles.tab} onClick={this.handleLoginBtn}>登陆</span>
-          <Link to="/about" className={styles.about}>关于</Link>
-          <Button>免费发布</Button>
+          {isLogin ?
+            <Link to="/me" className={styles.tab} >个人中心</Link> :
+            <span
+              className={styles.tab}
+              onClick={this.handleLoginBtn}
+            > 登陆/注册</span>
+          }
+          <Button onClick={this.handlePublishBtn}>免费发布</Button>
         </div>
-        <LoginForm show={this.state.showLoginForm} handleLoginBtn={this.handleLoginBtn} />
+        <LoginForm show={this.state.showLoginForm} handleLoginBtn={this.handleLoginBtn} logCreators={this.props.logCreators} />
       </Header>
     );
   }

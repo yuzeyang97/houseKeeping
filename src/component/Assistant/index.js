@@ -11,30 +11,33 @@ const tabArrs = [
   {
     tabName: '找保姆',
     icon: HOUSEKEEPER_ICON,
-    link: '/detail/houseKeeper'
+    link: '/detail/baomu/baomu'
   }, {
     tabName: '清洁专家',
     icon: CLEANER_ICON,
-    link: '/detail/cleaner'
+    link: '/detail/baojieqingxi/jiatingbaojie'
   }, {
     tabName: '生活技巧',
     icon: LIFESKLILL_ICON,
-    link: '/detail/lifeSkill'
+    link: 'http://www.sohu.com/a/221569210_440562'
   }, {
     tabName: '违章查询',
     icon: VIOLATION_ENQUIRY_ICON,
-    link: '/detail/violationEnquiry'
+    link: 'https://bj.122.gov.cn/'
   },
 
 ];
 
 export default function Assistant() {
   console.log(styles);
+  function handleClick(item) {
+    window.location.href = item.link;
+  }
   return (
     <div className={styles.listWrapper}>
       <h3>便民助手</h3>
       {
-        tabArrs.map(item => (<div className={styles.listLi}>
+        tabArrs.map(item => (<div className={styles.listLi} onClick={handleClick.bind(this, item)}>
           <img src={item.icon} className={styles.liimg} />
           <p>{item.tabName}</p>
         </div>))

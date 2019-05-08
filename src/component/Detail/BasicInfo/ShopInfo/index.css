@@ -1,0 +1,108 @@
+.shopinfo {
+    position: relative;
+    float: right;
+    margin: 22px 20px 22px 0;
+    padding: 0;
+    width: 288px;
+    background: #fff;
+    border: 1px solid #f3f3f3;
+    border-radius: 4px;
+    height: 200px;
+}
+
+.shopinfo__title {
+    position: relative;
+    z-index: 97;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333;
+}
+
+.shopinfo__title h2 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+}
+
+.shopinfo__title__tag {
+    clear: both;
+    padding: 5px 0 0;
+    overflow: hidden;
+    font-size: 0;
+    padding-top: 10px;
+    line-height: 1;
+}
+
+.shopinfo__title__tag .shopinfo__title__tag__members {
+    display: inline-block;
+    padding: 0 3px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-right: 7px;
+    color: #fff;
+    background: #f2b839;
+    vertical-align: top;
+}
+
+.shopinfo__intro {
+    width: 270px;
+    height: 60px;
+    background: #fbfbfb;
+    margin: 10px 10px 0;
+    padding: 0;
+    color: #333;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.shopinfo__intro dl {
+    width: 134px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    float: left;
+    border-right: solid 1px #eee;
+    color: #999;
+    font-size: 12px!important;
+}
+
+.shopinfo__intro dt {
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+}
+
+.shopinfo__intro dl.shopinfo__intro__last {
+    border: none;
+}
+
+.shopinfo__intro dl {
+    width: 134px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    float: left;
+    border-right: solid 1px #eee;
+    color: #999;
+    font-size: 12px!important;
+}
+
+.commentBtn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.RateTitle{
+    margin-bottom: 5px;
+    margin-top:15px;
+}

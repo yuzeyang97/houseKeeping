@@ -7,8 +7,10 @@ import 'antd/dist/antd.css';
 import './App.css';
 import rootReducer from './reducers';
 import Home from './containers/Home';
-import Detail from './containers/Detail';
+import Merchant from './containers/Merchant';
+import Me from './containers/Me';
 import About from './containers/About';
+import Publish from './containers/Publish';
 import NavBar from './component/NavBar';
 
 const logger = createLogger({
@@ -33,10 +35,12 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        <NavBar />
+        <Route path="/" component={NavBar} />
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route exact path={['/detail/:firstid', '/detail/:firstid/:secondid']} component={Detail} />
+        <Route exact path={['/shop/:firstid/:secondid/:shopId']} component={About} />
+        <Route exact path={['/detail/:firstid', '/detail/:firstid/:secondid']} component={Merchant} />
+        <Route exact path={['/me']} component={Me} />
+        <Route exact path={['/publish']} component={Publish} />
       </Router>
     </Provider>
   );

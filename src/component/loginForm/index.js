@@ -16,23 +16,6 @@ export default class LoginForm extends React.Component {
     };
   }
 
-   login=() => {
-     message.config({
-       top: 100,
-       duration: 2,
-       maxCount: 3,
-     });
-     if (!this.state.user || !this.state.password) { message.info('请输入完整信息'); } else {
-       axios({
-         method: 'post',
-         url: '/register',
-         data: {
-           name: this.state.user,
-           password: this.state.password
-         }
-       });
-     }
-   }
    handleToLogin = () => {
      this.setState({
        showLogin: true
@@ -60,7 +43,7 @@ export default class LoginForm extends React.Component {
            justifyContent: 'center'
          }}
        >
-         {showLogin ? <Login handleToRegister={this.handleToRegister} /> : <Register />}
+         {showLogin ? <Login handleToRegister={this.handleToRegister} logCreators={this.props.logCreators} handleClose={this.handleClose} /> : <Register />}
 
        </Modal>);
    }

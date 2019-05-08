@@ -26,3 +26,26 @@ a{
 .ant-list-vertical .ant-list-item-main{
   display: flex;
 }
+
+.ant-carousel .slick-slider{
+  display: flex;
+  align-items: center;
+}
+
+.ant-comment-actions{
+  margin-top: 0px;
+}
+
+.ant-comment-content-detail p{
+  margin-bottom:0px;
+}
+
+.ant-comment-inner{
+  padding:5px 0px
+}
+
+
+.ant-tabs .ant-tabs-left-content{
+    overflow: auto;
+    height: 100%;
+}

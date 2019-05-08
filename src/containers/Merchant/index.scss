@@ -1,0 +1,33 @@
+.loginWrapper{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.detailContainer{
+    width: 1190px;
+    padding-top: 20px;
+}
+
+.tabWrapper{
+    margin-top: 20px;
+    border-bottom:2px solid #ff552e;
+    width: 80%
+}
+
+.tabContainer{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    background: #ff552e;
+    color: #fff;
+    padding: 0 30px;
+    cursor: pointer;
+    border-radius: 2px 2px 0 0;
+    font-size: 18px;
+    text-decoration-line: none;
+}
+
+.listWrapper{
+    display: flex
+}

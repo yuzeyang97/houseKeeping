@@ -1,8 +1,15 @@
 import React from 'react';
 import {
-  Form, Icon, Input, Button, Checkbox,
+  Form, Icon, Input, Button, Checkbox, message
 } from 'antd';
+import axios from 'axios';
 import styles from './style.scss';
+
+message.config({
+  top: 100,
+  duration: 2,
+  maxCount: 3,
+});
 
 class NormalLoginForm extends React.Component {
     handleSubmit = e => {
@@ -10,6 +17,22 @@ class NormalLoginForm extends React.Component {
       this.props.form.validateFields((err, values) => {
         if (!err) {
           console.log('Received values of form: ', values);
+          axios({
+            method: 'post',
+            url: '/login',
+            data: values
+          }).then(e => {
+            if (e.data && e.data.status == 1) {
+              this.props.logCreators.login(e.data.token);
+              sessionStorage.setItem('token', e.data.token);
+              message.info('登陆成功');
+              setTimeout(() => {
+                window.location.reload();
+              }, 1000);
+            } else {
+              message.info('用户名或密码错误');
+            }
+          });
         }
       });
     }
@@ -19,7 +42,7 @@ class NormalLoginForm extends React.Component {
       return (
         <Form onSubmit={this.handleSubmit} className={styles.loginForm}>
           <Form.Item>
-            {getFieldDecorator('userName', {
+            {getFieldDecorator('user', {
               rules: [{ required: true, message: 'Please input your username!' }],
             })(
               <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Username" />

@@ -80,7 +80,7 @@ export default function MessageTabView() {
             tab={<span className={styles.sliderTapWrapper} >
               <img src={item.icon} className={styles.icon} />
               <span className={styles.iconText}>{item.tabName}</span>
-              {item.tabSon.map((sonItem, index) => <a key={index} className={styles.tabSon}>{sonItem}</a>)}
+              {item.tabSon.map((sonItem, index) => <span key={index} className={styles.tabSon}>{sonItem}</span>)}
             </span>}
             style={{ width: '740px' }}
           >

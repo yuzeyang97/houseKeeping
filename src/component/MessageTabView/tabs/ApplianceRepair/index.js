@@ -1,5 +1,6 @@
 import React from 'react';
 import ContentTab from '../ContentCommenTab';
+import firstTabMap from '../../../../config/tabConfig';
 
 const fwweixiu_icon = require('../../../../resource/img/tabs/applianceRepair/fwweixiu_icon.png');
 const jjweixiu_icon = require('../../../../resource/img/tabs/applianceRepair/jjweixiu_icon.png');
@@ -10,96 +11,24 @@ const tabs = [
   {
     tabsName: '房屋维修',
     icon: fwweixiu_icon,
-    sonTab: [
-      {
-        name: '防水补漏',
-        url: ''
-      },
-      {
-        name: '卫浴/洁具维修',
-        url: ''
-      },
-      {
-        name: '灯具维修',
-        url: ''
-      },
-      {
-        name: '电路维修/安装',
-        url: ''
-      },
-      {
-        name: '水管/水龙头维修',
-        url: ''
-      },
-      {
-        name: '门窗维修/安装',
-        url: ''
-      }
-    ]
+    firstParams: 'fangwuweixiu',
+    sonTab: firstTabMap.fangwuweixiu.secondTab
   },
   {
     tabsName: '家电维修',
     icon: jjweixiu_icon,
-    sonTab: [
-      {
-        name: '冰箱',
-        url: ''
-      },
-      {
-        name: '洗衣机',
-        url: ''
-      },
-      {
-        name: '空调',
-        url: ''
-      },
-      {
-        name: '电视',
-        url: ''
-      },
-      {
-        name: '厨房家电',
-        url: ''
-      },
-      {
-        name: '热水器',
-        url: ''
-      }
-    ]
+    firstParams: 'jiadianweixiu',
+    sonTab: firstTabMap.jiadianweixiu.secondTab
   }, {
     tabsName: '家具维修',
     icon: jsweixiu_icon,
-    sonTab: [
-      {
-        name: '沙发',
-        url: ''
-      },
-      {
-        name: '桌椅柜',
-        url: ''
-      },
-      {
-        name: '地板',
-        url: ''
-      },
-      {
-        name: '办公家具',
-        url: ''
-      },
-      {
-        name: '钟表',
-        url: ''
-      }
-    ]
+    firstParams: 'jiajuweixiu',
+    sonTab: firstTabMap.jiajuweixiu.secondTab
   }, {
     tabsName: '开锁/换锁/修锁',
+    firstParams: 'kaisuo',
     icon: kaisuo_icon,
-    sonTab: [
-      {
-        name: '开锁/换锁/修锁',
-        url: ''
-      }
-    ]
+    sonTab: firstTabMap.kaisuo.secondTab
   }
 ];
 
