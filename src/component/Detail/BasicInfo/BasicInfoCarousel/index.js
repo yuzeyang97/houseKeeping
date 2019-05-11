@@ -21,7 +21,7 @@ export default class BasicInfoCarousel extends React.Component {
     return (
       <Carousel autoplay className={styles.carousel}>
         { this.state.data.map((item, index) => (
-          <div key={index} ><img src={item} /></div>
+          <img src={item} key={index} />
         ))}
       </Carousel>
     );

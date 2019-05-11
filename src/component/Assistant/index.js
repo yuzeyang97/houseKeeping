@@ -37,7 +37,7 @@ export default function Assistant() {
     <div className={styles.listWrapper}>
       <h3>便民助手</h3>
       {
-        tabArrs.map(item => (<div className={styles.listLi} onClick={handleClick.bind(this, item)}>
+        tabArrs.map((item, index) => (<div className={styles.listLi} onClick={handleClick.bind(this, item)} key={index}>
           <img src={item.icon} className={styles.liimg} />
           <p>{item.tabName}</p>
         </div>))

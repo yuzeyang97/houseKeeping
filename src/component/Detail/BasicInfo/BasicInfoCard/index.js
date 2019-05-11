@@ -21,7 +21,7 @@ export default class BasicInfo extends React.Component {
         <pre>服务区域:  <span>朝阳  海淀  西城  东城  丰台  通州  石景山  房山 </span></pre>
         <pre>联系人:  <span>邹女士</span></pre>
         <pre>联系电话:  <span>13079813281</span></pre>
-        <pre>商家地址:  <span>朝阳 -  朝阳周边  - 北京市全区均有覆盖（北京小红帽快捷搬家有限公司)</span></pre>
+        <pre>商家地址:  <span>金海商富中心b座</span></pre>
       </div>
     );
   }

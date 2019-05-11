@@ -142,9 +142,9 @@ class RegistrationForm extends React.Component {
             label="手机号"
           >
             {getFieldDecorator('phone', {
-              rules: [{ required: true, message: '请输入手机号' }],
+              rules: [{ required: true, message: '请输入手机号' }, { pattern: /^1[34578]\d{9}$/, message: '请输入正确手机号!' }],
             })(
-              <Input style={{ width: '100%' }} placeholder="请输入手机号"/>
+              <Input style={{ width: '100%' }} placeholder="请输入手机号" />
             )}
           </Form.Item>
           <Form.Item

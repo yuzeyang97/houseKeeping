@@ -17,8 +17,8 @@ class Home extends React.Component {
     const token = sessionStorage.getItem('token');
     axios({
       method: 'post',
-      url: '/getInfo',
-      data: { token }
+      url: '/users/getInfo',
+      data: { token, id: 1 }
     }).then(e => {
       console.log(e);
       if (e.data.status == 1) {
@@ -31,11 +31,11 @@ class Home extends React.Component {
     console.log(this.props);
 
     return (
-      <div className={styles.tabWrapper}>
+      <div className={styles.tabWrapper} id="mePage">
         <Tabs defaultActiveKey="1" tabPosition="left" className={styles.tab}>
           <TabPane tab="账户资料" key="1" ><PersonTab data={this.props.user} /></TabPane>
-          <TabPane tab="我的收藏" key="2" className={styles.tabPane}><CollectionTab /></TabPane>
-          <TabPane tab="我的发布" key="3"><Release /></TabPane>
+          <TabPane tab="我的收藏" key="2" className={styles.tabPane}><CollectionTab history={this.props.history} /></TabPane>
+          <TabPane tab="我的发布" key="3"><Release history={this.props.history} /></TabPane>
         </Tabs>
       </div>
 

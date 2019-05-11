@@ -25,12 +25,12 @@ class NormalLoginForm extends React.Component {
             if (e.data && e.data.status == 1) {
               this.props.logCreators.login(e.data.token);
               sessionStorage.setItem('token', e.data.token);
-              message.info('登陆成功');
+              message.success('登陆成功');
               setTimeout(() => {
                 window.location.reload();
               }, 1000);
             } else {
-              message.info('用户名或密码错误');
+              message.error('用户名或密码错误');
             }
           });
         }

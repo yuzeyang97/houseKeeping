@@ -2,29 +2,17 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const mongooseModales = require('./mongoose');
 
 const router = express.Router();
-const mongoose = require('mongoose');
 
 // 连接本地数据库中的housekeeping库
-mongoose.connect('mongodb://localhost:27017/housekeeping');
 
 router.use(cookieParser()); // 使用cookie-parser
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
-
+const Users = mongooseModales.Users;
 // 每一个Schema对应MongoDB中的一个集合（collection）。Schema中定义了集合中文档（document）的格式。
-const UserSchema = new mongoose.Schema({
-  user: String,
-  password: String,
-  nick: String,
-  phone: String,
-  email: String
-  // status: String
-});
-// 用户访问的是Table库中的Users集合
-const Users = mongoose.model('Users', UserSchema);
-
 
 // 登陆
 router.post('/login', (req, res) => {
@@ -43,7 +31,6 @@ router.post('/login', (req, res) => {
 // 注册
 router.post('/register', (req, res) => {
   const user = req.body.user;
-  // const cookie = req.cookies.cookie;
   Users.find({ user }, (err, docs) => {
     if (docs.length > 0) {
       res.send({ status: 0, message: '用户名重复' });

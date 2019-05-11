@@ -1,15 +1,15 @@
 import React from 'react';
 import { List, Button } from 'antd';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 const listData = [];
 for (let i = 0; i < 23; i++) {
   listData.push({
-    href: 'http://ant.design',
-    title: `ant design part ${i}`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description: 'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content: 'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
+    href: '/shop/banjia/kongtiaoyiji/:1',
+    title: `机械设备起重、搬运、吊装、就位、人工起 ${i}`,
+    tabType: '搬家搬场',
+    content: '京城老字号30分钟响应全北京！随叫随到！多快好省！ 京城老字号30分钟响应全北京！随叫随到！多快好省！ 京城老字号30分钟响应全北京！随叫随到！多快好省！',
   });
 }
 
@@ -42,8 +42,8 @@ export default class Person extends React.Component {
                 extra={<img width={272} alt="logo" src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png" />}
               >
                 <List.Item.Meta
-                  title={<a href={item.href}>{item.title}</a>}
-                  description={item.description}
+                  title={<Link to={item.href}>{item.title}</Link>}
+                  description={`类别：${item.tabType}`}
                 />
                 {item.content}
               </List.Item>

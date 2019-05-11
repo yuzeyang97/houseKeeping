@@ -44,8 +44,39 @@ a{
   padding:5px 0px
 }
 
+.ant-carousel .slick-list{
+  width: 338px;
+}
 
-.ant-tabs .ant-tabs-left-content{
-    overflow: auto;
-    height: 100%;
+#mePage .ant-tabs-tabpane-active{
+  height: 100%;
+  overflow: auto;
+}
+
+#mePage .ant-tabs-content{
+  height: 100%;
+}
+
+.ant-card{
+  margin-bottom: 10px;
+}
+
+.ant-card-cover img{
+  width: 180px;
+  height: 180px;
+}
+.ant-card-body{
+  padding:10px
+}
+
+.ant-card-meta-description , .ant-card-meta-title{
+  text-align: center
+}
+
+.ant-card-meta-title{
+  font-size: 14px
+}
+
+.ant-list-item-meta-description{
+  margin-top: 10px;
 }

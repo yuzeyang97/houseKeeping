@@ -1,9 +1,14 @@
 import React from 'react';
-import { Button, Modal, Rate } from 'antd';
-import './index.css';
+import { Button, Modal, Rate, message } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
+import './index.css';
 
 // import styles from './style.scss';
+message.config({
+  top: 100,
+  duration: 2,
+  maxCount: 3,
+});
 
 export default class ShopInfo extends React.Component {
   constructor(props) {
@@ -14,7 +19,8 @@ export default class ShopInfo extends React.Component {
   state = {
     visible: false,
     TextAreaVal: '',
-    RateVal: 3.5
+    RateVal: 3.5,
+    isFavor: false
   }
 
   showModal = () => {
@@ -52,6 +58,17 @@ export default class ShopInfo extends React.Component {
     });
   }
 
+  handleFavor = () => {
+    if (this.state.isFavor) {
+      message.success('取消收藏成功');
+    } else {
+      message.success('收藏成功');
+    }
+    this.setState({
+      isFavor: !this.state.isFavor
+    });
+  }
+
   render() {
     return (
       <div className="shopinfo">
@@ -59,7 +76,7 @@ export default class ShopInfo extends React.Component {
           <h2>北京小红帽捷达搬家有限公司</h2>
           <div className="shopinfo__title__tag">
             <span className="shopinfo__title__tag__members">
-            会员1年
+            超级会员
             </span>
           </div>
         </div>
@@ -75,6 +92,7 @@ export default class ShopInfo extends React.Component {
         </div>
         <div className="commentBtn">
           <Button onClick={this.showModal}>评论</Button>
+          <Button onClick={this.handleFavor}>{this.state.isFavor ? '已收藏' : '收藏'}</Button>
         </div>
         <Modal
           title="请输入您的评价"

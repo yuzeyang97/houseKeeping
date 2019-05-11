@@ -26,7 +26,7 @@ class Topics extends React.Component {
           <div className={styles.tabContainer}>{this.secondTab.name}</div>
         </div>
         <div className={styles.listWrapper}>
-          <MerchantList firstTab={this.firstTab} secondTab={this.secondTab} />
+          <MerchantList firstTab={this.firstTab} secondTab={this.secondTab} history={this.props.history} />
           <AdvertisementSlider />
         </div>
       </div>
