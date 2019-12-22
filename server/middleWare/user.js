@@ -2,7 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const mongooseModales = require('./mongoose');
+const mongooseModales = require('../mongoose');
 
 const router = express.Router();
 
@@ -29,7 +29,7 @@ router.post('/login', (req, res) => {
 });
 
 // 注册
-router.post('/register', (req, res) => {
+router.post('users/register', (req, res) => {
   const user = req.body.user;
   Users.find({ user }, (err, docs) => {
     if (docs.length > 0) {

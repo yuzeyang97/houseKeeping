@@ -3,7 +3,7 @@ import { Tabs } from 'antd';
 import Description from './DetailDescription';
 import Comment from './Comment';
 import Address from './Address';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 const TabPane = Tabs.TabPane;
 

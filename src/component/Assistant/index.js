@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './style.scss';
+import styles from './style.module.scss';
 
 const HOUSEKEEPER_ICON = require('../../resource/img/tabs/assistant/baomu_icon_1.png');
 const CLEANER_ICON = require('../../resource/img/tabs/assistant/baojie_icon_2.png');

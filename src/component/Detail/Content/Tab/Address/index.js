@@ -1,6 +1,6 @@
 /* global BMap */
 import React from 'react';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 
 export default class Content extends React.Component {

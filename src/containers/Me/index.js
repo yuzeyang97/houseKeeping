@@ -7,7 +7,7 @@ import PersonTab from '../../component/Me/Personal';
 import CollectionTab from '../../component/Me/Collection';
 import Release from '../../component/Me/Release';
 import * as logCreator from '../../actions';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 const TabPane = Tabs.TabPane;
 class Home extends React.Component {

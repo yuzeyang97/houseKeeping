@@ -5,7 +5,7 @@ import firstTabMap from '../../config/tabConfig';
 import Breadcrumb from '../../component/Breadcrumb';
 import BasicInfo from '../../component/Detail/BasicInfo';
 import * as logCreator from '../../actions';
-import styles from './index.scss';
+import styles from './index.module.scss';
 import Content from '../../component/Detail/Content';
 
 

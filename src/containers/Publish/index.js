@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Breadcrumb from '../../component/Breadcrumb';
 import Form from '../../component/Publish/Form';
 import * as logCreator from '../../actions';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 class Publish extends React.Component {
   constructor(props) {

@@ -5,7 +5,7 @@ import { Layout, Button } from 'antd';
 import { connect } from 'react-redux';
 import * as logCreator from '../../actions';
 import LoginForm from '../loginForm';
-import styles from './style.scss';
+import styles from './style.module.scss';
 
 const { Header } = Layout;
 const homeIcon = require('../../resource/img/tabBar/home.png');

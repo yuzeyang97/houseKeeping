@@ -1,6 +1,6 @@
 import React from 'react';
 import { Cascader } from 'antd';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 const options = [{
   value: 'zhejiang',

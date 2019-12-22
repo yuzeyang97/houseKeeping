@@ -1,6 +1,6 @@
 import React from 'react';
 import { Divider, Input, message } from 'antd';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 const Icon1 = require('../../../resource/img/Me/f_200.png');
 const Icon2 = require('../../../resource/img/Me/e_200.png');

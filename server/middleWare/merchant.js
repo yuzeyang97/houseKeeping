@@ -2,7 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const mongooseModales = require('./mongoose');
+const mongooseModales = require('../mongoose');
 
 
 const router = express.Router();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'antd';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 const { Meta } = Card;
 const arr = [...Array(3).keys()].map((item, index) => (

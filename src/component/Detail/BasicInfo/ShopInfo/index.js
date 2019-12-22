@@ -3,7 +3,7 @@ import { Button, Modal, Rate, message } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
 import './index.css';
 
-// import styles from './style.scss';
+// import styles from './style.module.scss';
 message.config({
   top: 100,
   duration: 2,

@@ -4,7 +4,7 @@ import axios from 'axios';
 import Login from './Login';
 import Register from './Register';
 
-// import styles from './style.scss';
+// import styles from './style.module.scss';
 
 export default class LoginForm extends React.Component {
   constructor(props) {

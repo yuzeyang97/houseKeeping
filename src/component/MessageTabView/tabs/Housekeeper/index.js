@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'antd';
 import firstTabMap from '../../../../config/tabConfig';
-import styles from './style.scss';
+import styles from './style.module.scss';
 
 const icon = require('../../../../resource/img/tabs/baomu_icon.png');
 const backicon = require('../../../../resource/img/tabs/baomuad_yunying.png');

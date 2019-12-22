@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 export default function (props) {
   const { tab } = props;

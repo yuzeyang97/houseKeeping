@@ -1,6 +1,6 @@
 import React from 'react';
 import { List, Card, Button, message } from 'antd';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 const data = [
   {

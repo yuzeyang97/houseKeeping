@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
-// import styles from './style.scss';
+// import styles from './style.module.scss';
 
 export default class BasicInfo extends React.Component {
   constructor(props) {

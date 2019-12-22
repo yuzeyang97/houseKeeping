@@ -3,9 +3,9 @@ import { Modal, message } from 'antd';
 import axios from 'axios';
 import Tab from './Tab';
 import Slider from '../../AdvertisementSlider';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
-// import styles from './style.scss';
+// import styles from './style.module.scss';
 
 export default class Content extends React.Component {
   constructor(props) {

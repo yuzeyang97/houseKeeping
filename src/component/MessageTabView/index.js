@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tabs } from 'antd';
-import styles from './style.scss';
+import styles from './style.module.scss';
 import MoveHouse from './tabs/MoveHouse';
 import Housekeeper from './tabs/Housekeeper';
 import ApplianceRepair from './tabs/ApplianceRepair';

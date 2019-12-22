@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel } from 'antd';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
-// import styles from './style.scss';
+// import styles from './style.module.scss';
 
 export default class BasicInfoCarousel extends React.Component {
   constructor(props) {

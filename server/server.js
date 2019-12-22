@@ -1,7 +1,7 @@
 const express = require('express');
 
-const users = require('./user');
-const merchant = require('./merchant');
+const users = require('./middleWare/user');
+const merchant = require('./middleWare/merchant');
 
 const app = express();
 

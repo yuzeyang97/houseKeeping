@@ -7,7 +7,7 @@ import Breadcrumb from '../../component/Breadcrumb';
 import AdvertisementSlider from '../../component/AdvertisementSlider';
 import firstTabMap from '../../config/tabConfig';
 import * as logCreator from '../../actions';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 class Topics extends React.Component {
   constructor(props) {

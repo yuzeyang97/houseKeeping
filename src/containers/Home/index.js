@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import * as logCreator from '../../actions';
 import MessageTabView from '../../component/MessageTabView';
 import Assistant from '../../component/Assistant';
-import styles from './index.scss';
+import styles from './index.module.scss';
 
 class Home extends React.Component {
   constructor(props) {

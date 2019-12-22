@@ -3,7 +3,7 @@ import {
   Form, Icon, Input, Button, Checkbox, message
 } from 'antd';
 import axios from 'axios';
-import styles from './style.scss';
+import styles from './style.module.scss';
 
 message.config({
   top: 100,
