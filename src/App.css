@@ -1,0 +1,82 @@
+a{
+  text-decoration: none;
+}
+
+#root{
+  height: 100%;
+  padding-top:64px;
+  display: flex;
+  justify-content:center;
+}
+
+/* 重写Antd css */
+/* tab栏 */
+.ant-tabs .ant-tabs-left-bar .ant-tabs-tab{
+  text-align: left;
+}
+
+.ant-list-vertical .ant-list-item-meta-title{
+  margin-bottom: 0;
+}
+
+.ant-list-item-meta-description{
+  margin: 5px 0px;
+}
+
+.ant-list-vertical .ant-list-item-main{
+  display: flex;
+}
+
+.ant-carousel .slick-slider{
+  display: flex;
+  align-items: center;
+}
+
+.ant-comment-actions{
+  margin-top: 0px;
+}
+
+.ant-comment-content-detail p{
+  margin-bottom:0px;
+}
+
+.ant-comment-inner{
+  padding:5px 0px
+}
+
+.ant-carousel .slick-list{
+  width: 338px;
+}
+
+#mePage .ant-tabs-tabpane-active{
+  height: 100%;
+  overflow: auto;
+}
+
+#mePage .ant-tabs-content{
+  height: 100%;
+}
+
+.ant-card{
+  margin-bottom: 10px;
+}
+
+.ant-card-cover img{
+  width: 180px;
+  height: 180px;
+}
+.ant-card-body{
+  padding:10px
+}
+
+.ant-card-meta-description , .ant-card-meta-title{
+  text-align: center
+}
+
+.ant-card-meta-title{
+  font-size: 14px
+}
+
+.ant-list-item-meta-description{
+  margin-top: 10px;
+}

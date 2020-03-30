@@ -1,0 +1,72 @@
+.contentTitleIcon{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.iconText{
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin-left: 10px;
+    border: none;
+}
+
+
+.contentHeader{
+    display: block;
+    width: 93%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+}
+.detailProject{
+    margin-top: 10px;
+}
+
+.detailProject a{
+    color: black;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.contentCenter{
+    position: absolute;
+    bottom: 0;
+    width: 740px;
+    height: 300px;
+    margin-top: 50px;
+    padding-left: 20px;
+    font-family: "微软雅黑";
+}
+
+.contentCenterImg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.firstTitle{
+    font-size: 22px;
+    height: 52px;
+    line-height: 59px;
+    color: black;
+}
+
+.secondTitle{
+    font-size: 14px;
+    color: #999;
+    margin: 10px 0px;
+}
+
+.removeBtn{
+    margin-top: 10px;
+    font-size: 17px;
+    color: #ff552e;
+    width: 120px;
+    height: 48px;
+}

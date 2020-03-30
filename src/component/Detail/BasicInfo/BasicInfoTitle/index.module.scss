@@ -1,0 +1,39 @@
+.title{
+    position: relative;
+    z-index: 99;
+    padding: 0px 30px 10px 0px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+.name{
+    font: 400 20px/30px "微软雅黑",sans-serif;
+    color: #333;
+    padding: 14px 0 0;
+}
+
+.info{
+    margin: 7px auto 0;
+    line-height: 20px;
+    height: 20px;
+    z-index: 21;
+    padding: 0 0 12px;
+    overflow: hidden;
+}
+
+.time{
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+
+.totalcount{
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+

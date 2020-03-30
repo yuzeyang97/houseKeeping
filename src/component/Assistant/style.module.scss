@@ -1,0 +1,25 @@
+.listWrapper{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    width: 132px;
+    height: 466px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    padding: 10px 0px;
+}
+
+.listLi{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.liimg{
+    width: 37px;
+    height: 38px;
+    margin-bottom: 10px
+}

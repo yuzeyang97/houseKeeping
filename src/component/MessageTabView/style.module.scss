@@ -1,0 +1,35 @@
+.sliderTapWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon{
+    height: 16px;
+    width: 16px;
+}
+
+.iconText{
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin: 0px 4px;
+    border: none;
+}
+
+.tabSon{
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+    margin: 4px 0 4px 0;
+    white-space: nowrap;
+    border-right: 1px solid #e0e0e0;
+    height: 13px;
+    line-height: 13px;
+    padding: 0px 3px;
+}
+
+.tabSon:last-child{
+    border-right: none;
+}

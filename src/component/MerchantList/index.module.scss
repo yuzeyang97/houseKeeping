@@ -1,0 +1,12 @@
+.listItem{
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.content{
+    word-break: break-all;
+   display: -webkit-box;
+    -webkit-line-clamp: 3;
+    
+    overflow: hidden;
+}

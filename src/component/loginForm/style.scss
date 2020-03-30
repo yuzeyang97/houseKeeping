@@ -1,0 +1,58 @@
+.loginFormWrap{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    animation: show 0.7s;
+}
+
+.mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.loginFormContent{
+    display: flex;
+    height: 300px;
+    width: 450px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #051d33;
+    border-radius: 30px;
+    position: absolute;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.input{
+    margin: 20px 0px;
+    width: 280px;
+    height: 35px;
+}
+.formBtn{
+    margin-top: 10px;
+    background: #2e689e;
+    border-color: #2e689e;
+}
+
+.hide{
+    opacity: 0;
+    transition: all 2s; 
+}
+
+.show{
+    opacity: 1;
+    transition: all 1s; 
+}

@@ -1,0 +1,5 @@
+.publish-form .ant-form-item{
+    width: 500px;
+    margin:20px auto;
+    transform: translateX(-10%)
+}

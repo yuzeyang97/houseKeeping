@@ -1,0 +1,46 @@
+{
+  "name": "housekeeping",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.16.1",
+    "axios": "^0.18.0",
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-react-html-attrs": "^2.1.0",
+    "concurrently": "^4.1.0",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.11.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "style-loader": "^0.23.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.0",
+    "eslint-plugin-react": "^7.1.0"
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "start": "concurrently 'mongod' 'npm run react-start' 'cd server && npm run start'",
+    "react-build": "react-scripts build",
+    "build": "concurrently 'npm run react-build' 'cd server && npm run build'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "proxy": "http://localhost:5000",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "homepage":"." 
+}

@@ -1,0 +1,57 @@
+.userImgBorder{
+    width: 136px;
+}
+
+.userImg{
+    width: 120px;
+    height: 120px;
+    margin: 8px;
+}
+
+.upBtn{
+    font-size: 14px;
+    position: relative;
+    margin-top: 14px;
+    width: 136px;
+    height: 40px;
+    line-height: 40px;
+    background: #ff552e;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.systemImgBox{
+    margin-left: 50px;
+    padding: 5px;
+}
+
+.systemImgText{
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.systemImg{
+    width: 80px;
+    height: 80px;
+    margin:10px;
+    cursor: pointer;
+}
+
+.userImgWrapper{
+    display: flex;
+}
+
+.changeDataLi{
+    width: 200px;
+    margin-left: 20px;
+}
+
+.changeText{
+    margin-left: 10px;
+    color:#001529;
+    cursor: pointer;
+}
